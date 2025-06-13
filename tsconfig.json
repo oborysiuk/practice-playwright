@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "esnext",
+    "types": ["@playwright/test", "node"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
+}

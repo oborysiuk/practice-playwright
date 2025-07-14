@@ -42,24 +42,26 @@ export default defineConfig({
   projects: [
     {
       name: 'setup',
-      use: { ...devices['Desktop Chrome'] },
+      //use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Firefox'] },
       testMatch: '*/setup/**.ts'
     },
     {
       name: 'smoke',
-      use: { ...devices['Desktop Chrome'] },
+      //use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Firefox'] },
       testIgnore: '*/setup/**.ts',
       dependencies: ['setup']
     },
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
-
     // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
+    //   name: 'chromium',
+    //   use: { ...devices['Desktop Chrome'] },
     // },
+
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
 
     // {
     //   name: 'webkit',
